@@ -43,6 +43,11 @@ ECMA - ECMAScript - default version of JS
 
 ### Aula 03
 How to learn a programming language?
+Books for this classes: 
+- JavaScript , O guia definitivo
+- JavaScript, O guia do programader
+- Mozilla, https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- ECMA, https://ecma-international.org/publications-and-standards/standards/ecma-262/
 
 
 ## MODULO B
