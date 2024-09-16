@@ -97,13 +97,79 @@ Data Types:
 - null
 - undefinied
 - object
-    - array
+    - Array
 - function
 
 `typeof variable` can be used to check the type
 
 ### Aula 06
+Manipulating data
 
+Using the ex002.html we will use `prompt` to store a name inside a variable and show it as an alert
+
+```JS
+var name = window.prompt('Your name ?')
+alert("Hello, it's a pleasure to meet you " + name)
+// concatenation with the '+' 
+// but it can also sum with numbers
+```
+
+the 'prompt()' gives back a string, in order to sum we will need to convert the datatype
+
+```JS
+var n;
+// convert variable n to an integer
+Number.parseInt(n)
+// convert variable n to a float
+Number.parseFloat(n)
+// convert to a number, let JS find out
+Number(n)
+
+var n1 = Number.parseInt(prompt('A number '))
+var n2 = parseInt(prompt('Another number '))
+var n3 = Number(prompt('Another another number '))
+var s = n1 + n2 + n3
+alert('The sum is ' + s)
+
+// for a string convertion
+String(n)
+n.toString()
+```
+template strings
+using ` ` and `${n}` we can use variables directly inside a string instead of using concatenation 
+
+```JS
+var s = 'JavaScript'
+// get the length of a string
+s.length
+// convert to uppercase
+s.toUpperCase()
+// convert to lowercase
+s.toLowerCase()
+
+exemple:
+    var name = prompt("Please your name : ")
+    document.write(`Hello ${name}. Your name has ${name.length} letters`)
+    //to use html tags
+    document.write(`<h2>Hello ${name}.Your name has ${name.length} letters</h2>`)
+    // to jump a line
+    document.writeln(`<h2>Your name has ${name.length} letters, on another line</h2>`)
+    // a break line tag <br/> can also be used
+
+```
+in case we need more than one number after a point we can use,
+
+`name.toFixed(2)` for 2 numbers after the point
+
+we can also replace a dot with a comma 
+
+`name.toFixed(2).replace('.',',')`
+
+we can also use something to show as currency
+
+`n.toLocaleString('pt-BR',(style: 'currency' , currency : 'BRL'))`\
+`n.toLocaleString('pt-BR',(style: 'currency' , currency : 'USD'))`\
+`n.toLocaleString('pt-BR',(style: 'currency' , currency : 'EUR'))`
 
 ## MODULO C
 
