@@ -37,7 +37,12 @@ document.querrySelector('img#lnXdpd').style.visibility = 'hidden'
 // these changes are only for the client, and will be removed once the website is updated (since a current version is called from the server)
 ```
 
-## Aula 02
+### Aula 02
+Story of how JS was created and how it's important on browsers
+ECMA - ECMAScript - default version of JS
+
+### Aula 03
+How to learn a programming language?
 
 
 ## MODULO B
