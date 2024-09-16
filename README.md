@@ -60,6 +60,50 @@ Building first the scripts
 First time seeing how to modify a webpage, HTML and CSS and first JS small commands (alert, cofirm, prompt)
 
 ## MODULO B
+### Aula 05
+How to comment: 
+    
+    // for a line
+
+    /* 
+    multiple 
+    lines  
+    */
+ 
+Variables
+
+can be written with letters, `$` or `_`
+cannot have numbers at the start or espaces, or reserved words 
+It is case sensitive: this != This
+
+```JS
+var n1 = 5
+var n2 = 4
+var n3 = 6
+
+var s1 = "Curso"
+var s2 = ' em'
+var s3 = `video`
+```
+Open Node.js, to start messing up with JS is an option to test variables
+we write `.exit` to leave the CLI for node
+
+Data Types:
+- number
+    - Infinity
+    - NaN (not a number)
+- string
+- boolean
+- null
+- undefinied
+- object
+    - array
+- function
+
+`typeof variable` can be used to check the type
+
+### Aula 06
+
 
 ## MODULO C
 
