@@ -49,6 +49,15 @@ Books for this classes:
 - Mozilla, https://developer.mozilla.org/en-US/docs/Web/JavaScript
 - ECMA, https://ecma-international.org/publications-and-standards/standards/ecma-262/
 
+Install:
+- Google Chrome 
+- VScode
+- Node.js
+
+### Aula 04
+Building first the scripts 
+
+First time seeing how to modify a webpage, HTML and CSS and first JS small commands (alert, cofirm, prompt)
 
 ## MODULO B
 
