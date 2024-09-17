@@ -207,8 +207,73 @@ For incrementation
     x = x + 1   => x++
     x = x - 1   => x--
 
+### Aula 08
+Relational operators
 
+    > greater
+    < less
+    >= greater or equal
+    <= less or equal
+    == equal 
+    != different
 
+exemple
+
+    5 > 2  => true
+    7 < 4  => false
+    8 >= 8 => true
+    9 <= 7 => false
+    5 == 5 => true
+    4 != 4 => false
+    
+Identity operator
+
+    == equals 
+    === identical
+
+exemple
+
+    5 == 5    => true
+    5 == "5"  => true // JS does not test type
+    5 === "5" => false // here we use an identical operator, type also checked
+    5 === 5   => true
+    5 !== 5   => false
+
+Logical operators
+
+    ! not, negation
+    && and, conjunction
+    || or, disjunction
+    
+exemple
+
+    negation
+    !true  => false
+    !false => true
+
+    conjuntion
+    true  && true  => true
+    true  && false => false
+    false && true  => false
+    false && false => false
+
+    disjunction
+    true  && true  => true
+    true  && false => true
+    false && true  => true
+    false && false => false
+
+Order of operations
+
+    PEMDAS
+    > < >= ...
+    ! && ||
+
+Ternary operator
+
+    ? : 
+    test ? true : false
+    
 ## MODULO C
 
 ## MODULO D
