@@ -341,7 +341,7 @@ By class or .
 ```JS
 document.getElementsByClassName()
 ```
-By selector
+By selector, by CSS elements
 
 ```JS
 // we must specify the place it will modify or take from a #forIds and .forClasses
@@ -352,9 +352,70 @@ document.querrySelector()
 document.querrySelectorAll()
 ```
 
-### Aula 09
+### Aula 10
+DOM Events
+https://developer.mozilla.org/en-US/docs/Web/Events
+Events are anything that can happen with an element
+
+exe: mouse movements
+
+    mouseenter - enters an element
+    mousemove - moves inside an element
+    mousedown - mouse moves down
+    mouseup - mouse moves up
+    click - a mouse click
+    mouseout - mouse leaves the element
+
+functions in order to do something once an event happens
+
+we can use onclick() inside a tag in order to initiate an action
+```JS
+function action {
+
+}
+```
+We can add different functions that will act once a certain action is taken, we use that inside the tags
+
+But it can get very convouted inside a tag, for that we better use an `eventListener`
+
+```JS
+
+document.addEventListener('DOM EVENT', function)
+exemple: 
+var a = document.getElementById('id')
+a.addEventListener('click', colorChange)
+
+function colorChange(){
+    a.style.background = "red"
+}
+```
+A smaller exemple of what we can do
+```HTML
+<body>
+    <h1>Adding Numbers</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Sum" onclick="sum()">
+    <div id="ans">Answer</div>
+    <script>
+        function sum() {
+            // recieves the values from bu DOM inputs
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            var ans = document.querySelector('div#ans')
+            // save the data as an int or float of the value recieved above
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            ans.innerHTML = `The sum of ${n1} and ${n2} is <strong>${s}</strong>`
+        }
+    </script>
+</body>
+```
 
 ## MODULO D
+### Aula 11
+
 
 ## MODULO E
 

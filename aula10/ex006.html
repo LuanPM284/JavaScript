@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - ex006</title>
+    <style>
+        div#area {
+            background: lightgreen;
+            color: white;
+            font: normal 18px Arial;
+            width: 200px;
+            height: 200;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="area" onclick="clicker()" onmouseenter="enter()" onmouseout="out()"> -->
+    <div id="area">
+        Interact
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicker)
+        a.addEventListener('mouseenter', enter)
+        a.addEventListener('mouseout', out)
+
+        function clicker() {
+            a.style.background = "lightblue"
+            a.innerText = "Text,color Changed!"
+        }
+        function enter() {
+            // var a = document.getElementById('area')
+            a.innerText = "Inside Box"
+            a.style.background = "orange"
+        }
+        function out() {
+            a.innerText = "Outside box"
+            a.style.background = "purple"
+        }
+    </script>
+</body>
+
+</html>
