@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - ex005</title>
+    <style>
+        body {
+            background: rgb(102, 102, 221);
+            color: white;
+            font: normal 18px Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Learning to use DOM</h1>
+    <p>Here goes to the result</p>
+    <p>Learning to use <strong>DOM</strong> with JavaScript</p>
+    <div id="msg">click here</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        // window.document.write(window.document.URL)
+        window.document.write("The results is " + p1.innerText)
+        document.write("<br/>")
+        window.document.write("The results is " + p1.innerHTML)
+        p1.style.color = "blue"
+        document.write("<br/>")
+        /*
+        var d = document.getElementById('msg')
+        d.style.background = "green"
+        document.write(d.innerHTML)
+        d.innerText = 'This is new Text'
+        */
+
+        // var d = document.getElementsByName('msg')[0]
+        // d.style.background = 'purple'
+        // d.innerText = "This is purple"
+
+        var d = document.querySelector('div#msg')
+        d.style.color = "red"
+    </script>
+
+</body>
+
+</html>

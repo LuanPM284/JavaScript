@@ -275,6 +275,84 @@ Ternary operator
     test ? true : false
     
 ## MODULO C
+### Aula 09
+DOM : Documen Object Model
+parents and childs 
+DOM tree:
+        -- location
+windows -- document -- html -- head -- meta
+        -- history          -       -- title
+                            -
+                            -- body -- h1
+                                    -- p
+                                    -- p -- strong
+                                    -- div
+                            
+We call those objects values using JS
+
+```JS
+// it writes on the page what is inside the parantheses
+window.document.write("")
+
+// it will show the charset, set of characters
+window.document.write(window.document.charset)
+
+// it will show the type of app it is running as the navigator
+window.document.write(window.navigator.appName)
+
+// it will show the current URL
+window.document.write(window.document.URL)
+
+```
+How to access the DOM
+
+By tag
+```JS
+// create a variable and chose by tag name, p, the first of the p so 0th element 
+var p1 = document.getElementsByTagName('p')[0]
+
+// for the second element
+var p1 = document.getElementsByTagName('p')[1]
+
+// we can show it by using .write and also .innerText, that takes the text from the tag
+window.document.write(p1.innerText)
+
+// if we use innerText no formatting done inside is taken, for that innerHTML is nedded
+window.document.write(p1.innerHTML)
+
+// since we have a variale we can modify it, for exemple the style and color
+p1.style.color = "blue"
+```
+
+By Id or #
+
+```JS
+// notice the element and not elements, so unique
+document.getElementById()
+```
+By name
+
+```JS
+// notice the elements and not element, so can select multiples and must be specified with []
+document.getElementsByName()
+```
+
+By class or .
+```JS
+document.getElementsByClassName()
+```
+By selector
+
+```JS
+// we must specify the place it will modify or take from a #forIds and .forClasses
+
+document.querrySelector()
+// as an exemple : document.querySelector('div#msg'); a div with an id of 'msg'
+
+document.querrySelectorAll()
+```
+
+### Aula 09
 
 ## MODULO D
 
