@@ -171,6 +171,44 @@ we can also use something to show as currency
 `n.toLocaleString('pt-BR',(style: 'currency' , currency : 'USD'))`\
 `n.toLocaleString('pt-BR',(style: 'currency' , currency : 'EUR'))`
 
+### Aula 07
+Arythmetic operations
+
+    + addition
+    - substraction
+    * product
+    / division
+    % modulo
+    ** exponent
+
+Order of operations : PEMDAS () ** * / % + -
+
+For variables attribution
+
+    var a = 5+3 // a recieves 8
+    var b = a%5 // b recieves 3
+    var c = 5*b**2 // c recieves 45
+    var d = 10-a/2 // d recieves 6
+    var e = 6*2/d  // e recieves2
+    var f = b%e + a/e // f recieves 3
+For auto-attribution
+    
+    var n = 3   => simplification
+    n = n + 4   => n+= 4
+    n = n - 5   => n-= 5
+    n = n * 4   => n*= 4
+    n = n / 2   => n/= 2
+    n = n ** 2  => n**=2
+    n = n % 5   => n%=5
+
+For incrementation
+
+    var x = 5
+    x = x + 1   => x++
+    x = x - 1   => x--
+
+
+
 ## MODULO C
 
 ## MODULO D
