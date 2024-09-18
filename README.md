@@ -415,7 +415,34 @@ A smaller exemple of what we can do
 
 ## MODULO D
 ### Aula 11
+Conditions
 
+Sequencial code, it's executed line by line
+
+```JS
+// one condition
+if (condition){
+    action
+}
+
+// two conditions
+if(condition){
+    action
+}else{
+    other action
+}
+
+// several conditions
+if(condition){
+    action  
+}else if(other condition){
+    other action
+}else if(other other condition){
+    other other action
+}...else{
+    last action
+}
+```
 
 ## MODULO E
 

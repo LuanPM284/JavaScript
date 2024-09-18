@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex009 remade in HTML</title>
+</head>
+
+<body>
+    <h1>Checking the country</h1>
+    Country :<input type="text" name="txt" id="txt">
+    <input type="button" value="Check" onclick="check()">
+    <div id='ans'></div>
+    <script>
+        function check() {
+            var country = document.getElementById('txt')
+            var ans = document.getElementById('ans')
+            var cnt = country.value
+            ans.innerText = `Your country is ${cnt}, you must be:`
+            if (cnt == 'BR') {
+                ans.innerHTML += '<p>A Brasillian!</p>'
+            } else {
+                ans.innerHTML += '<p>A FREEDOM person</p>'
+            }
+        }
+
+    </script>
+</body>
+
+</html>

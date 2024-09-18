@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex010</title>
+</head>
+
+<body>
+    <h1>Ticket System</h1>
+    Car velocity : <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Check" onclick="calculate()">
+    <div id="ans"></div>
+    <script>
+        // var txtc = document.querySelector('input#txtvel')
+        function calculate() {
+            var txtc = document.getElementById('txtvel')
+            var ans = document.querySelector('div#ans')
+            var vel = Number(txtc.value)
+            ans.innerHTML = `<p>Your car's velocity is <strong>${vel}</strong> km/h</p>`
+            ans.innerHTML += '<p>Drive always with a seatbelt</p>'
+            if (vel > 60) {
+                ans.innerHTML += '<p>You just got a <strong>TICKET!</strong></p>'
+            }
+        }
+    </script>
+</body>
+
+</html>
