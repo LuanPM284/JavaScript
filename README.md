@@ -444,6 +444,79 @@ if(condition){
 }
 ```
 
+### Aula 12
+Conditions
+
+Nested conditions
+
+```JS
+if(condition){
+    action 1
+} else {
+    if(condition 2){
+        action 2
+    } else{
+        action 3
+    }
+}
+```
+exe:
+
+```JS
+// F8 for execute
+var age = 22
+if (age < 16) {
+    console.log('Does not vote')
+} else {
+    // console.log('Votes')
+    if (age < 18 || age > 65) {
+        console.log('Vote is optional')
+    } else if (age >= 18) {
+        console.log("Can Vote")
+    }
+}
+```
+exe:
+
+```JS
+// fixed hour
+// var hour = 23
+// the time now, using the Date() method
+var now = new Date()
+var hour = now.getHours()
+console.log(`Now are ${hour} hours`)
+if (hour < 12) {
+    console.log('Good Morning')
+} else if (hour < 18) {
+    console.log('Good afternoon')
+} else {
+    console.log('Good Evening')
+}
+
+```
+
+Multiple conditions, `switch`
+
+```JS
+// break is neede so we end the switch or we would keep looping the cases
+switch(expression){
+    case value 1:
+        action
+        break
+    case value 2:
+        action
+        break
+    case value 3:
+        acction
+        break
+    default:
+        deafultAction
+        break
+}
+```
+
+### Aula 13
+
 ## MODULO E
 
 ## MODULO F
