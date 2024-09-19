@@ -527,6 +527,14 @@ We create:
 - styles.css
 - script.js
 
+Ex1: website changes image and background color depending on time(hour) of the system or the time chosen
+
+We start by dupliating the model files inside a directory in order to have a common bases
+
+The website: Freepik https://fr.freepik.com/ was used for free open-source images, another option is Pexels https://www.pexels.com/fr-fr/
+
+Ex2:
+
 ## MODULO E
 
 ## MODULO F
