@@ -635,7 +635,7 @@ function check() {
 
 ## MODULO E
 ### Aula 13
-Loops
+Loops `while` and `do while`
 
 ```JS
 // loop with initial logic test
@@ -650,6 +650,22 @@ do{
     action
 } while(condition)
 ```
+
+### Aula 14
+Loops `for`
+
+```JS
+for(start;test/condition;incrementation){
+    action
+}
+```
+We can use debugging in order to see the step by step process of the loop, allowing a better view of the action block (depuration mode??)
+
+For that we need to add a breakpoint, also watch the variables we are interested on and start by clicking on the Run tab and F10 to do steps
+
+It's good to check errors, need to remember it is not because it runs that errors are not present
+
+### Aula 14ex
 
 ## MODULO F
 
