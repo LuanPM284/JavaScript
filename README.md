@@ -634,6 +634,22 @@ function check() {
 ```
 
 ## MODULO E
+### Aula 13
+Loops
+
+```JS
+// loop with initial logic test
+// while the condition is true the action will be repeated
+while (condition){
+    action
+}
+
+// loop with finishing logic test
+//
+do{
+    action
+} while(condition)
+```
 
 ## MODULO F
 
