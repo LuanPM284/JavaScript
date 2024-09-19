@@ -515,7 +515,17 @@ switch(expression){
 }
 ```
 
-### Aula 13
+### Aula 12ex
+Exercices
+
+The following are simple exercices that will test the already seem points.
+
+First a model of the website presentation is created in order to be more visually appealling and easier to read.
+
+We create:
+- model.html
+- styles.css
+- script.js
 
 ## MODULO E
 
