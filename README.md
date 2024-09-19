@@ -533,7 +533,105 @@ We start by dupliating the model files inside a directory in order to have a com
 
 The website: Freepik https://fr.freepik.com/ was used for free open-source images, another option is Pexels https://www.pexels.com/fr-fr/
 
-Ex2:
+Here is the JS code with comments on important parts:
+
+```JS
+// var photo = document.getElementById("photo")
+function load() {
+    var msg = document.getElementById("msg")
+    var img = document.getElementById("image")
+    var date = new Date()
+    var hours = date.getHours()
+    msg.innerHTML = `Now are ${hours} hours.`
+    var bd = document.querySelector('body')
+    // or I could directly chose the body to change inside the document, since it is a parent element on the dom
+    // document.body.style.background = "color"
+    /*
+    var hours = 8 // morning
+    var hours = 15 // noon
+    var hours = 20 // evening
+    */
+    if (hours >= 0 && hours < 12) {
+        // morning
+        img.src = 'morning.png'
+        bd.style.background = 'lightgoldenrodyellow'
+    } else if (hours >= 12 && hours < 18) {
+        // afternoon
+        img.src = 'afternoon.png'
+        bd.style.background = 'lightcoral'
+    } else {
+        // good evening
+        img.src = 'nigth.png'
+        bd.style.background = 'midnightblue'
+    }
+}
+
+```
+
+Ex2: website changes depending on the used given data, a different image is presented together with it's age
+
+Here is the JS code with comments on important parts:
+```JS
+function check() {
+    var date = new Date()
+    var year = date.getFullYear()
+    var formYear = document.getElementById('txtyear')
+    var formSex = document.getElementById('radsex')
+    var ans = document.getElementById('ans')
+    // var ans = document.querySelector('ans') 
+    // formYear.value.length takes the size of the written numbers, if no numbers than size 0
+    if (formYear.value.length == 0 || Number(formYear.value) > year) {
+        alert('[ERROR] Check the values and try again')
+    } else {
+        // radio buttons must have a same name or they will be seen as not connected
+        // here we can later chose the one to use by []
+        var formSex = document.getElementsByName('radsex')
+        var age = year - Number(formYear.value)
+        // ans.innerHTML = `Calculated age: ${age}` for a test
+        var gender = ''
+        // we can create HTML elements with createElement()
+        var img = document.createElement('img')
+        // we can add attibutes inside the created tags
+        img.setAttribute('id', 'photo')
+        // here formSex takes all the above, so we can jsut [] to chose the radio button
+        if (formSex[0].checked) {
+            gender = 'Male'
+            if (age >= 0 && age < 10) {
+                // child
+                img.setAttribute('src', 'baby-m.png')
+            } else if (age >= 10 && age < 21) {
+                // young
+                img.setAttribute('src', 'young-m.png')
+            } else if (age > 21 && age < 50) {
+                // adult
+                img.setAttribute('src', 'adult-m.png')
+            } else {
+                // old
+                img.setAttribute('src', 'old-m.png')
+            }
+        } else if (formSex[1].checked) {
+            gender = 'Female'
+            if (age >= 0 && age < 10) {
+                // child
+                img.setAttribute('src', 'baby-f.png')
+            } else if (age >= 10 && age < 21) {
+                // young
+                img.setAttribute('src', 'young-f.png')
+            } else if (age > 21 && age < 50) {
+                // adult
+                img.setAttribute('src', 'adult-f.png')
+            } else {
+                // old
+                img.setAttribute('src', 'old-f.png')
+            }
+        }
+        ans.style.textAlign = 'center'
+        ans.innerHTML = `We noticed that you are ${gender} at ${age} years old.`
+        // this will append, or add, the new element img and so be visible
+        ans.appendChild(img)
+    }
+}
+```
 
 ## MODULO E
 

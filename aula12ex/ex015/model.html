@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execice Age image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Age Check</h1>
+    </header>
+    <section>
+        <div>
+            <p>Year of birth:
+                <input type="number" name="txtyear" id="txtyear" min="0">
+            </p>
+            <p>Sex:
+                <input type="radio" name="radsex" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="radsex" id="female" checked>
+                <label for="female">Female</label>
+            </p>
+            <p>
+                <input type="button" value="Check" onclick="check()">
+            </p>
+
+        </div>
+        <div id="ans">
+            Fill the data above to see the results
+        </div>
+    </section>
+    <footer>
+        <p>&copy; ThisWebSite</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
