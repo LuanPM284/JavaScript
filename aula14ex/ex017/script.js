@@ -1,3 +1,5 @@
+// --- MY CODE ---
+/*
 function generate() {
     var txtnum = document.getElementById("txtnum")
     var ans = document.getElementById("ans")
@@ -43,3 +45,32 @@ function generate() {
 // still have some troubles like:
 //  - the "write a number above" does not dessapear like in the exemple
 //  - if I click the button more than once, it does not erase the already present options it just adds them below
+*/
+
+// --- THE SOLUTION ---
+function generate() {
+    let num = document.getElementById("txtn")
+    let table = document.getElementById("selTable")
+    // this here is the simple part that erases the select before we can reqrite!! so simple but I dindn't see it. 
+    // Won't commit the same mistake 
+    table.innerHTML = ''
+    // the above also solves my problem of showing the text, since it erases eveeyrhing once the function is called
+
+    if (num.value.length == 0) {
+        alert('Please write a number!')
+    } else {
+        let n = Number(num.value)
+        let c = 1
+        while (c <= 10) {
+            let item = document.createElement("option")
+            item.text = `${n} x ${c} = ${n * c}`
+            // this allows the options to recieve a value, necessary for other languages, such as PHP
+            item.value = `table${c}`
+            table.appendChild(item)
+            // necessary for a while loop
+            c++
+        }
+    }
+
+
+}

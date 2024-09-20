@@ -791,13 +791,83 @@ My solution:
 Notice the following error, the table 9 is under the table 8, for in the video only one table is displayed even when the button is clicked twice without a refresh
 ![times_table_image_exemple](/images/Capture%20d’écran%202024-09-20%20203315.jpg)
 
-
+---
 > The following is the code from the solution videos
 
+For the Counter:
 ```JS
+function count() {
+    let start = document.getElementById("txtstart")
+    let end = document.getElementById("txte")
+    let step = document.getElementById("txtstep")
+    let ans = document.getElementById("ans")
+
+    if (start.value.length == 0 || end.value.length == 0 || step.value.length == 0) {
+        ans.innerHTML = "Impossible to count"
+    } else {
+        ans.innerHTML = "Counting: "
+        let sa = Number(start.value)
+        let e = Number(end.value)
+        let se = Number(step.value)
+        if (se <= 0) {
+            // so simple! I can do it outside, instead of a whole if statement with several confliting conditions
+            alert("Step invalid, consider number 1")
+            se = 1
+        }
+        // good to check if end is bigger than start, I didn't do that, good point
+        if (sa < e) {
+            // increasing count
+            for (let c = sa; c <= e; c += se) {
+                // this is funny, I could just insert directly into ans element, instead of using that I use
+                // that is display inline; ans = ans + newLine; works well 
+                ans.innerHTML += ` ${c} \u{1F449}`
+            }
+            ans.innerHTML += `\u{1F3C1}`
+        } else {
+            // decreasing count
+            // another good point is not a sum but substrating, if end smaller than start
+            for (let c = sa; c >= e; c -= se) {
+                ans.innerHTML += ` ${c} \u{1F449}`
+            }
+        }
+        // for the emojis, unicode emoji list, for unicode U+ types we will wrap with \u{code}
+        ans.innerHTML += `\u{1F3C1}`
+    }
+}
+```
+For the Times Table:
+
+```JS
+function generate() {
+    let num = document.getElementById("txtn")
+    let table = document.getElementById("selTable")
+    // this here is the simple part that erases the select before we can reqrite!! so simple but I dindn't see it. 
+    // Won't commit the same mistake 
+    table.innerHTML = ''
+    // the above also solves my problem of showing the text, since it erases eveeyrhing once the function is called
+
+    if (num.value.length == 0) {
+        alert('Please write a number!')
+    } else {
+        let n = Number(num.value)
+        let c = 1
+        while (c <= 10) {
+            let item = document.createElement("option")
+            item.text = `${n} x ${c} = ${n * c}`
+            // this allows the options to recieve a value, necessary for other languages, such as PHP
+            item.value = `table${c}`
+            table.appendChild(item)
+            // necessary for a while loop
+            c++
+        }
+    }
+
+
+}
 ```
 
-
 ## MODULO F
+### Aula 15
+
 
 ## Conclusion
