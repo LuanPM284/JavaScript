@@ -279,15 +279,16 @@ Ternary operator
 DOM : Documen Object Model
 parents and childs 
 DOM tree:
-        -- location
-windows -- document -- html -- head -- meta
-        -- history          -       -- title
-                            -
-                            -- body -- h1
-                                    -- p
-                                    -- p -- strong
-                                    -- div
-                            
+
+            -- location
+    windows -- document -- html -- head -- meta
+            -- history          -       -- title
+                                -
+                                -- body -- h1
+                                        -- p
+                                        -- p -- strong
+                                        -- div
+                                
 We call those objects values using JS
 
 ```JS
