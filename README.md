@@ -1,5 +1,8 @@
-# Curso em Video - JavaScript
+# **REVIEW JAVASCRIPT**
+# [Curso em Video ](https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)- JavaScript
+The following are my notes while reviewing my knowledge of the JS language before I tackle frameworks and more complicated projects.
 
+It serves as a way to see how far I have learned as well as a way to make sure the besics are solid.
 # Personnel Notes
 
 ## MODULO A
@@ -869,6 +872,6 @@ function generate() {
 
 ## MODULO F
 ### Aula 15
-
+Data types
 
 ## Conclusion
