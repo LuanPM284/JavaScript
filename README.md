@@ -2,9 +2,9 @@
 # [Curso em Video ](https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)- JavaScript
 The following are my notes while reviewing my knowledge of the JS language before I tackle frameworks and more complicated projects.
 
-The source material is from a Brazilian YouTube channel that I have personnaly used to start learning programming and algorithmic thinking. The JavaScript course is only for the basics I will be following another tutorial for more advanced topics.
+The source material is from a Brazilian YouTube channel that I have personaly used to start learning programming and algorithmic thinking. The JavaScript course is only for the basics I will be following another tutorial for more advanced topics.
 
-It serves as a way to see how far I have learned as well as a way to make sure the besics are solid.
+It serves as a way to see how far I have learned as well as a way to make sure the basics are solid.
 # Personnel Notes
 
 ## MODULO A
