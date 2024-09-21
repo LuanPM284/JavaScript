@@ -188,12 +188,12 @@ Order of operations : PEMDAS () ** * / % + -
 
 For variables attribution
 
-    var a = 5+3 // a recieves 8
-    var b = a%5 // b recieves 3
-    var c = 5*b**2 // c recieves 45
-    var d = 10-a/2 // d recieves 6
-    var e = 6*2/d  // e recieves2
-    var f = b%e + a/e // f recieves 3
+    var a = 5+3 // a receives 8
+    var b = a%5 // b receives 3
+    var c = 5*b**2 // c receives 45
+    var d = 10-a/2 // d receives 6
+    var e = 6*2/d  // e receives2
+    var f = b%e + a/e // f receives 3
 For auto-attribution
     
     var n = 3   => simplification
@@ -403,7 +403,7 @@ A smaller exemple of what we can do
     <div id="ans">Answer</div>
     <script>
         function sum() {
-            // recieves the values from bu DOM inputs
+            // receives the values from bu DOM inputs
             var tn1 = document.getElementById('txtn1')
             var tn2 = document.querySelector('input#txtn2')
             var ans = document.querySelector('div#ans')
@@ -935,9 +935,78 @@ console.log(num.indexOf(3)) // output: 1; position of the 3 after sorting
 // num.indexOf(10)
 console.log(num.indexOf(100)) // output: -1; the value does not exist inside this array; it's a default
 ```
-### Aula 15
+### Aula 16
 Functions
 
+Functions are actions that are executed when called or in a response to an event.
+
+Function can recieve parameters and return results.
+
+```Js
+function action(parameters){
+    block action
+    return answer
+}
+
+// this is calling a function
+action(5) // 5 is the parameter
+```
+As an exemple let us do a function that checks if a number is even or odd:
+```JS
+function evenOdd(n){
+    // modulo "%" gives us the rest of a division, if even the rest is 0, if odd the rest is 1
+    if(n % 2 == 0){
+        return 'even'
+    } else{
+        return 'odd'    
+    }
+}
+let ans = evenOdd(11) // here ans will recieve the answer; in this case an 'odd'
+```
+
+Other exemples:
+```JS
+function sum(n1, n2) {
+    return n1 + n2
+}
+console.log(sum(2, 5)) // output: 7
+
+// what if we do not give a parameter?
+console.log(sum(2)) // output: NaN; Not a Number
+// to solve this we can set a default/optional value for a parameter; here they are 0 if not given
+function sum2(n1 = 0, n2 = 0) {
+    return n1 + n2
+}
+console.log(2) // output: 2
 
 
+// we can also make it so a variable receives a functions, since JS is a functinal language
+let v = function (x) {
+    return x * 2
+}
+// we can add the parameter with the variable
+console.log(v(5)) // output: 10
+
+
+// a factorial is: n! = n(n-1)! with 1!= 1; or 5! = 5*4*3*2*1 = 120
+function factorial(n) {
+    let fat = 1
+    for (let c = n; c > 1; c--) {
+        fat *= c
+    }
+    return fat
+}
+console.log(factorial(5)) // output: 120
+
+
+// with recursive 
+function factorial(n) {
+    if (n == 1) {
+        return 1
+    } else {
+        return n * factorial(n - 1)
+    }
+}
+console.log(factorial(5)) // output: 120
+```
 ## Conclusion
