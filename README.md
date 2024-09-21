@@ -2,6 +2,8 @@
 # [Curso em Video ](https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)- JavaScript
 The following are my notes while reviewing my knowledge of the JS language before I tackle frameworks and more complicated projects.
 
+The source material is from a Brazilian YouTube channel that I have personnaly used to start learning programming and algorithmic thinking. The JavaScript course is only for the basics I will be following another tutorial for more advanced topics.
+
 It serves as a way to see how far I have learned as well as a way to make sure the besics are solid.
 # Personnel Notes
 
@@ -1200,4 +1202,34 @@ The solution code is so much cleaner and simple to understand. It is nothing I c
 
 Need to slow down and think it through!
 
+### Aula 17
+ Next steps
+
+- HTML + CSS : Curso em Video
+- functions. arrow, callback, anonym
+- OOP
+- Modularisation
+- RegEx
+- JSON
+- AJAX
+- NodeJS
+
+Fundamental of Objects:
+
+```JS
+let num = [5,8,4] // can accept different data types, but fixed index
+
+// declare an object, in key:value 
+let friend = {
+    name:'Joe',
+    sex: 'M',
+    weigth: 85.4,
+    gainWeigth(w){} // a function
+    }
+```
+
 ## Conclusion
+
+This concludes this short course with the basics of JavaScript. I will follow others that will go more into advanced notions.
+
+I will use different branches in order to well separate the different sources.
