@@ -1101,6 +1101,7 @@ function show() {
 
 ```
 An image of my results:
+
 ![my try](/images/Capture%20d’écran%202024-09-21%20202327.jpg)
 
 >Ex2:
